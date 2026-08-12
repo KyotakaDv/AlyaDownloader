@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alya Bot • Media Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <main class="card">
+        <div class="badge">Alya Bot Services • Multimídia</div>
+        <h1>Universal <span>Media Downloader</span></h1>
+        <p class="subtitle">Baixe vídeos e fotos do Instagram, YouTube, TikTok, X (Twitter) e outras redes.</p>
+
+        <form id="downloadForm">
+            <div class="input-group">
+                <input type="url" id="mediaUrl" placeholder="Cole a URL aqui (YouTube, Insta, TikTok...)" required>
+                <button type="submit" id="submitBtn">
+                    <span>Скачать</span> (Baixar Mídia)
+                </button>
+            </div>
+        </form>
+
+        <div id="statusContainer" class="status-container hidden">
+            <div id="loader" class="loader hidden"></div>
+            <p id="statusMessage"></p>
+            <a id="downloadLink" class="btn-download hidden" download target="_blank">
+                💾 Abrir Arquivo Salvo
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Inspirado na estética de <strong>Alya Kujo</strong> • Alya Bot WhatsApp Integration</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
